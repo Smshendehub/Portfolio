@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurabh's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/896162f30f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h2><span>S</span>aurabh's <span>P</span>ortfolio</h2>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              id="menubutton"
+              class="fa-solid fa-circle-xmark"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i id="menubutton" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Welcome!!! It's Me <br /><span>Saurabh A Full Stack</span><br />Java
+            Developer
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------About ----------------- -->
+
+    <div id="About">
+      <div class="container">
+        <div class="row">
+          <div class="About-col-1">
+            <img src="images/port.jpg" />
+          </div>
+          <div class="About-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Myself Saurabh Mahadev Shende , I have Completed B-Tech , As a
+              passionate and motivated fresher, my objective is to kickstart my
+              career as a Software Developer and contribute to the development,
+              testing, and implementation of innovative software programs. I am
+              eager to work closely with an energetic team of engineers,
+              refining the design, implementation, and architecture of
+              cloud-based products. With a strong focus on writing clean and
+              efficient code, I aim to troubleshoot, debug, and maintain
+              existing software programs. I am committed to continuously
+              monitoring the quality, performance, and usage of developed
+              functionalities in applications. By collaborating with
+              cross-functional teams, I strive to enhance the applications and
+              contribute to their continuous improvement.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Java</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>Javascript</span></li>
+                <li><span>React Js</span></li>
+                <li><span>Node Js</span></li>
+                <li><span>MonogoDB</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>2024-Current</span><br />Senior Advisor At Reliance PPM
+                  Ltd
+                </li>
+                <li>
+                  <span> 2024-Java Full Stack </span><br />Course Persuing at
+                  Clicks Campus
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>(2019-2023)</span><br />B-Tech At GCOE,Yavatmal</li>
+                <li>
+                  <span>(2017-2019)</span><br />Hsc-12th At Shri sant Gadge
+                  Maharaj college MZR
+                </li>
+                <li>
+                  <span>(2018-2019)</span><br />SSC-10th At Bhartiya Dnyanpeeth
+                  MZR
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------Projects------------- -->
+
+    <div id="project">
+      <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="project-list">
+          <div>
+            <h2>Personal Portfolio</h2>
+            <p>
+              developed and Designed a Responsive Personal Portfolio Website To
+              Showcase My Front-End Skills Used HTML , CSS , Javascript To Build
+              The Portfolio Website , Include Diffrent Sections And Responsive
+              Navbar , favicons Website For Icons.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <br />
+            <h2>E-Panchayat Portal</h2>
+            <p>
+              developed and design user friendly E panchayat portal with
+              official links and images using HTML , CSS , Bootstrap ,
+              Javascript also include icons from favicon Website to make it eye
+              satisfying .
+            </p>
+          </div>
+          <div>
+            <br />
+            <h2>To-Do List</h2>
+            <p>
+              developed A ToDo App By using MonogoDB ,Express , React Js , Node
+              Js . This application used to manage our day to day activites when
+              we add any toDo it is directly stored in MongoDB collection I have
+              use Diffrent Dependencies Like cons , nodemon , express , mongoose
+              etc. It also consist of add , edit , update , delete
+              functionalities.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -------------Contact------------------ -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>shendesaurabh2001@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>9970593223</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a
+              href="images/saurabh_shende_resume_software_developer(1).pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name "
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email "
+                required
+              />
+              <input
+                type="Message"
+                name="Message"
+                rows="6"
+                placeholder="Your Message "
+                required
+              />
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © Made By <i class="fa-solid fa-heart"></i> Saurabh</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-links");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
